@@ -1,4 +1,4 @@
-package com.cg.movieManagement;
+package com.cg.moviemanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

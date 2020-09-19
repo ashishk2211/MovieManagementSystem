@@ -1,4 +1,4 @@
-package com.cg.movieManagement;
+package com.cg.moviemanagement;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

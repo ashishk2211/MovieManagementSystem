@@ -13,7 +13,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="movie_movies")
+@Table(name="movies")
 public class Movie {
 	
 	@Id

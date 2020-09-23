@@ -15,7 +15,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="movie_show")
+@Table(name="show")
 public class Show {
 	@Id
 	@Column(name="show_id")

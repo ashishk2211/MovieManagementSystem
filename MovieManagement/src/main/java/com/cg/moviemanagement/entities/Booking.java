@@ -1,3 +1,10 @@
+/*************************************************************************************************************************
+ *          @author          Arushi Bhardwaj,Ashish Kumar
+ *          Description      It is an entity class of Booking, which maps to a database table named booking, consists
+ *          				 of its data members, setters and getters.
+ *         Version             1.0
+ *         Created Date    19-SEPT-2020
+ *************************************************************************************************************************/
 package com.cg.moviemanagement.entities;
 
 import java.time.LocalDate;
@@ -15,7 +22,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @Entity
 	@DynamicInsert
 	@DynamicUpdate
-	@Table(name="movie_booking")
+	@Table(name="booking")
 	public class Booking {
 		
 		@Id

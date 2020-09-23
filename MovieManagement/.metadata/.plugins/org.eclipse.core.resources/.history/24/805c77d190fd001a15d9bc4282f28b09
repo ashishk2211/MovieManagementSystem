@@ -1,0 +1,9 @@
+package com.cg.moviemanagement.service;
+import java.util.List;
+
+import com.cg.moviemanagement.entities.Booking;
+public interface ViewBookingService{
+	
+	public List<Booking> getBookingDetails(String Contact);
+
+}

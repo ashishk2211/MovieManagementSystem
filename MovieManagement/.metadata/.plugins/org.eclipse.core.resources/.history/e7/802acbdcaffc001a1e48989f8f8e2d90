@@ -1,0 +1,15 @@
+
+server.port=8084
+
+#configure Context path
+server.servlet.context-path=/moviemanagement
+
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521/xe
+spring.datasource.username=ashish
+spring.datasource.password=4267261
+
+#Hibernate configuration
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect

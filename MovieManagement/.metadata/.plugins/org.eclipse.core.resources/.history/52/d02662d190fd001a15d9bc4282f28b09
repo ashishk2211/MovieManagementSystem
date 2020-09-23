@@ -1,0 +1,27 @@
+package com.cg.moviemanagement.service;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cg.moviemanagement.dao.MovieDao;
+import com.cg.moviemanagement.entities.Booking;
+@Transactional
+@Service
+public class ViewBookingServiceImpl implements ViewBookingService{
+	
+	@Autowired
+	private MovieDao dao;
+	
+
+	public List<Booking> getBookingDetails(String Contact) {
+		
+		List<Booking> bookingLst = dao.getBookingDetailsContact(Contact); 
+		bookingLst.sort((b1,b2)->b2.getBookingDate().compareTo(b1.getBookingDate()));
+		return bookingLst;
+	}
+
+}

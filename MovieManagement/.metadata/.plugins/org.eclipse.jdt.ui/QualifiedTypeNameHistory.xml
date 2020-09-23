@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.DynamicInsert"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.DynamicUpdate"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.entities.Movie"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.entities.Booking"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.entities.Show"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.dao.MovieDao"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.service.MovieBookingService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.dto.BookingForm"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.dto.MovieMessage"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.util.MovieConstants"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.service.ViewBookingService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="com.cg.moviemanagement.exceptions.MovieNotFoundException"/>
+</qualifiedTypeNameHistroy>

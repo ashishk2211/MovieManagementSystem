@@ -1,0 +1,19 @@
+package oca;
+
+public class ocaques {
+	
+	int a=10;
+	
+	public static void main(String[] args)
+	{
+	 
+		new ocaques().change();
+		
+	
+	}
+	public void change()
+	{
+		int a=8;
+		System.out.println(a+ "");
+	}
+}

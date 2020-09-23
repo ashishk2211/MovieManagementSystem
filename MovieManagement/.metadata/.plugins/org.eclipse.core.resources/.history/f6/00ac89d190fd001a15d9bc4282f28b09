@@ -1,0 +1,11 @@
+package com.cg.moviemanagement.service;
+
+import com.cg.moviemanagement.dto.BookingForm;
+
+public interface MovieBookingService {
+	
+
+	public String addBooking(BookingForm bookingForm);
+	public boolean cancelBooking(String bookingId);
+
+}

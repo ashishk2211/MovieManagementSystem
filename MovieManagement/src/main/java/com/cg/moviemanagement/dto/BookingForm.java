@@ -30,6 +30,13 @@ public class BookingForm {
 	public void setContact(String contact) {
 		this.contact = contact;
 	}
+	public BookingForm(int showId, int tkts, String userName, String contact) {
+		super();
+		this.showId = showId;
+		this.tkts = tkts;
+		this.userName = userName;
+		this.contact = contact;
+	}
 	
 	
 }

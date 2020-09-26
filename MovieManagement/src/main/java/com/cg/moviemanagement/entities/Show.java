@@ -1,4 +1,5 @@
 package com.cg.moviemanagement.entities;
+
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -14,7 +15,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="show")
+@Table(name="moviemanagement_show")
 public class Show {
 	@Id
 	@Column(name="show_id")

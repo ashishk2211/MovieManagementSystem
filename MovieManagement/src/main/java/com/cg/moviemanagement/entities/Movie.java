@@ -10,10 +10,12 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
+
+
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="movie")
+@Table(name="moviemanagement_movie")
 public class Movie {
 	
 	@Id
@@ -82,3 +84,4 @@ public class Movie {
 	}	
 	
 }
+

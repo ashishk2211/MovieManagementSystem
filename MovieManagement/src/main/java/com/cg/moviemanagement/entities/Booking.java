@@ -1,4 +1,5 @@
 package com.cg.moviemanagement.entities;
+
 import java.time.LocalDate;
 
 import javax.persistence.Column;
@@ -11,10 +12,11 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
+
 @Entity
 @DynamicInsert
 @DynamicUpdate
-@Table(name="booking")
+@Table(name="moviemanagement_booking")
 public class Booking {
 	
 	@Id
@@ -102,3 +104,4 @@ public class Booking {
 	
 	
 	}
+

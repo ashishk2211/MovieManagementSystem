@@ -66,6 +66,22 @@ public class ViewMovieServiceImpl implements ViewMovieService{
 				.limit(2).collect(Collectors.toList());
 	}
 
+	@Override
+	public boolean addmovie(Movie movie) {
+		boolean b=dao.addMovie(movie);
+		if(b==true)
+		{
+			System.out.println("Added SucessFully");
+		    return true;
+		}
+		else
+		{
+			System.out.println("Not Added");
+			return false;
+		}
+		
+	}
+
 	
 	
 	

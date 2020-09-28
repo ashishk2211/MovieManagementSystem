@@ -6,3 +6,5 @@ insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,ac
 insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,active,release_date) values(3006,'Frozen','English','Jennifer','Action',1,To_Date('2019/09/08','yyyy/mm/dd'));
 insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,active,release_date) values(3007,'Frozen2','English','Jennifer','Action',1,To_Date('2018/03/05','yyyy/mm/dd'));
 insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,active,release_date) values(3008,'War','Hindi','Karan','Action',1,To_Date('2018/02/12','yyyy/mm/dd'));
+insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,active,release_date) values(3009,'KGF','Telugu','Prasanth','Action',1,To_Date('2018/02/12','yyyy/mm/dd'));
+insert into MOVIEMANAGEMENT_MOVIE(movie_id,movie_name,language,director,genre,active,release_date) values(3010,'KGF2','Telugu','Prasanth','Action',1,To_Date('2018/02/12','yyyy/mm/dd'));

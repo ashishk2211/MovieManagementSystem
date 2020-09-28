@@ -16,12 +16,19 @@ public class MovieDaoImpl implements MovieDao{
 
 	@PersistenceContext
 	private EntityManager em;
-
  
 	@Override
-	public boolean addMovie(Movie movie) {
-		em.persist(movie);
-		return true;
+	public boolean addMovie(Movie movie) 
+	{
+		if(true)
+		{
+		
+			em.persist(movie);
+			return true;
+		}
+		
+		return false;
+
 	}
 
 	@Override
@@ -29,8 +36,6 @@ public class MovieDaoImpl implements MovieDao{
 		em.merge(movie);
 		return true;
 	}
-
-
 	
 	@Override
 	public Movie viewMovie(int movieId) {

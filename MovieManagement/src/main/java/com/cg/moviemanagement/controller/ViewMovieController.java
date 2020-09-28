@@ -3,6 +3,8 @@ package com.cg.moviemanagement.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -52,12 +54,13 @@ public class ViewMovieController {
 	
 
 	@PostMapping("/AddMovie")
-	public String addMovie(@RequestBody Movie movieobject)  {
-		
-        dao.addMovie(movieobject);
+	public ResponseEntity<String> addMovie(@RequestBody Movie movieobject) throws MovieNotFoundException {
+		if(movieobject.getMovieName().contentEquals("null")) throw new MovieNotFoundException("Empty Name not allowed");
+        service.addmovie(movieobject);
         
-		return "Movie Added";
+		return new ResponseEntity<String>("Movie Added",HttpStatus.OK);
 	}
+	
 		 
 
 }

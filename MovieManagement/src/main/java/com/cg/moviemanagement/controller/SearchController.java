@@ -17,39 +17,39 @@ import com.cg.moviemanagement.service.SearchService;
 import com.cg.moviemanagement.util.MovieConstants;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class SearchController {
 	
 	@Autowired
 	private SearchService serviceObject;
 
-	/*********************************************************************************************************************************
-	 * Method: searchMovie
-     *Description: To search a movie based on user input of director / language / genre / movie name. 
-	 * @param name              - input of  director / language / genre / movie name.
-	 * @returns movieList       - all movies whose criteria matches input given by user.
-	 * @throws MovieNotFoundException - When the user searched for a movie that does not exists in database, exception is thrown. 
-                *Created By                              - Prameela
-                *Created Date                            - 26-SEP-2020                           	 
-	 **********************************************************************************************************************************/
-
-	@GetMapping("searchmovie/{name}")
-	public List<Movie> searchMovie(@PathVariable("name") String name) throws MovieNotFoundException {
-		List<Movie> movieList=serviceObject.getMovies(name);
-		if(movieList.isEmpty()) {
-			throw new MovieNotFoundException(MovieConstants.MOVIE_NOT_AVAILABLE);
-		}
-		return movieList;
-	}
-
+//	/*********************************************************************************************************************************
+//	 * Method: searchMovie
+//     *Description: To search a movie based on user input of director / language / genre / movie name. 
+//	 * @param name              - input of  director / language / genre / movie name.
+//	 * @returns movieList       - all movies whose criteria matches input given by user.
+//	 * @throws MovieNotFoundException - When the user searched for a movie that does not exists in database, exception is thrown. 
+//                *Created By                              - Prameela
+//                *Created Date                            - 26-SEP-2020                           	 
+//	 **********************************************************************************************************************************/
+//	@CrossOrigin
+//	@GetMapping("searchmovie/{name}")
+//	public List<Movie> searchMovie(@PathVariable("name") String name) throws MovieNotFoundException {
+//		List<Movie> movieList=serviceObject.getMovies(name);
+//		if(movieList.isEmpty()) {
+//			throw new MovieNotFoundException(MovieConstants.MOVIE_NOT_AVAILABLE);
+//		}
+//		return movieList;
+//	}
+//
 	
 	
 	
 	
 	
 	
-	
+	@CrossOrigin
 	@GetMapping("/showsforscreen/{screenname}")
 	public List<Show> getShowsForScreen(@PathVariable("screenname") String screenName) throws ShowException
 	{
@@ -60,7 +60,7 @@ public class SearchController {
 	
 
 	
-	
+	@CrossOrigin
 	@GetMapping("/viewshowsforscreenmoviedt/{screenname}/{movieid}/{searchdt}")
 	public List<Show> getShowsForScreenMovieDate(@PathVariable("screenname") String screenName, @PathVariable("movieid") int movieid ,
 			@PathVariable("searchdt") @DateTimeFormat(pattern="yyyy-M-d") LocalDate searchDt ) throws ShowException
@@ -70,7 +70,7 @@ public class SearchController {
 		
 	}
 
-	
+	@CrossOrigin
 	@GetMapping("/viewshowsforscreendt/{screenname}/{searchdt}")
 	public List<Show> getShowsForScreenDate(@PathVariable("screenname") String screenName, 
 			@PathVariable("searchdt") @DateTimeFormat(pattern="yyyy-M-d") LocalDate searchDt ) throws ShowException
@@ -81,7 +81,7 @@ public class SearchController {
 	}
 	
 	
-	
+	@CrossOrigin
 	@GetMapping("/viewshowsfordatemovieid/{movieid}/{searchdt}")
 	public List<Show> getShowsForMovieDt( @PathVariable("movieid") int movieid ,
 			@PathVariable("searchdt") @DateTimeFormat(pattern="yyyy-M-d") LocalDate searchDt ) throws ShowException

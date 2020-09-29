@@ -25,23 +25,23 @@ public class SearchServiceImpl implements SearchService {
 	@Autowired
 	private MovieDao dao;
 
-	/*********************************************************************************************************************
-	 * Method: getMovies 
-	 * Description: To give a list of movies by taking movie name/movie director/ movie genre as input.
-	 * @param searchStr: Movie's name/ movie genre/ movie director's name.
-	 *              Created By - prameela 
-	 *              Created Date - 26-SEP-2020
-	 * @throws MovieNotFoundException - When a movie is search for which does not exist in database, exception is thrown.
-	 *********************************************************************************************************************/
-
-	@Override
-	public List<Movie> getMovies(String searchStr) throws MovieNotFoundException {
-		if(dao.getMovies(searchStr).size()==0)
-			throw new MovieNotFoundException("Movie with Name "+searchStr+" not found");
-	   else
-		return dao.getMovies(searchStr);
-	}
-
+//	/*********************************************************************************************************************
+//	 * Method: getMovies 
+//	 * Description: To give a list of movies by taking movie name/movie director/ movie genre as input.
+//	 * @param searchStr: Movie's name/ movie genre/ movie director's name.
+//	 *              Created By - prameela 
+//	 *              Created Date - 26-SEP-2020
+//	 * @throws MovieNotFoundException - When a movie is search for which does not exist in database, exception is thrown.
+//	 *********************************************************************************************************************/
+//
+//	@Override
+//	public List<Movie> getMovies(String searchStr) throws MovieNotFoundException {
+//		if(dao.getMovies(searchStr).size()==0)
+//			throw new MovieNotFoundException("Movie with Name "+searchStr+" not found");
+//	   else
+//		return dao.getMovies(searchStr);
+//	}
+//
 	
 	
 	

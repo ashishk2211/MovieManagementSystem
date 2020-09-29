@@ -10,7 +10,7 @@ import com.cg.moviemanagement.exceptions.ShowException;
 
 public interface SearchService {
 
-	public List<Movie> getMovies(String searchStr)throws MovieNotFoundException;
+	//public List<Movie> getMovies(String searchStr)throws MovieNotFoundException;
 	public List<Show> getShows(String screenName)throws ShowException;
 	public List<Show> getShows(LocalDate searchDt, int movieId)throws ShowException;
 	public List<Show> getShows(String screenName, LocalDate searchDt, int movieId)throws ShowException;

@@ -9,5 +9,7 @@ public interface ViewMovieService {
 	public List<Movie> viewMovies() throws MovieNotFoundException;
 	public List<Movie> viewNewMovies() throws MovieNotFoundException;
 	boolean addmovie(Movie movie);
+	
+	List<Movie> searchMovies(String searchStr) throws MovieNotFoundException;
 	 
 }

@@ -21,13 +21,11 @@ class MovieManagementSystemApplicationTests {
 	ViewMovieService service;
 	   @MockBean
 	   MovieDao dao;
-	   @MockBean
-	   SearchService search;
-
+	  
 	   @Test
 		public void testSearchMovie() throws MovieNotFoundException {
-			search.getMovies("hindi");
-			verify(search,times(1)).getMovies("hindi");
+			service.searchMovies("hindi");
+			verify(service,times(1)).searchMovies("hindi");
 		}
  
 		
@@ -49,7 +47,8 @@ class MovieManagementSystemApplicationTests {
 		void test() {
 			
 		}
- 
+
+}
  	/*	@Test
 	    void testAddMovie() {
 			
@@ -71,7 +70,7 @@ class MovieManagementSystemApplicationTests {
 			verify(service,times(1)).deletemovie(3005);
 		}*/
 
-}
+
 	
 	
 	

@@ -1,0 +1,29 @@
+
+
+class Outer { 
+
+class Inner { 
+
+public void print() { 
+
+System.out.println("Inner: print"); 
+
+} 
+
+} 
+
+} 
+
+class Test { 
+
+public static void main(String []args) { 
+
+	Outer.Inner inner = new Outer().new Inner();
+
+inner.print(); 
+
+} 
+
+} 
+
+

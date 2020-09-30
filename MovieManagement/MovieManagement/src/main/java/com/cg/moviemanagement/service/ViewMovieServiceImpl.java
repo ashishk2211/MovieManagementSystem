@@ -30,7 +30,7 @@ public class ViewMovieServiceImpl implements ViewMovieService{
 		movielst.sort((m1,m2)->m1.getMovieName().compareTo(m2.getMovieName()));
 		return movielst;
 	}
-
+	
 	@Override
 	public List<Movie> viewNewMovies() throws MovieNotFoundException {
 		List<Movie> movielst = dao.viewActiveMovies();
@@ -48,4 +48,5 @@ public class ViewMovieServiceImpl implements ViewMovieService{
 				.limit(2).collect(Collectors.toList());
 	}
 
+	
 }

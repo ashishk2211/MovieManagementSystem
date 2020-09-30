@@ -29,7 +29,6 @@ public class BookingMovieController {
 	}
 	
 	
-	
 	/*********************************************************************************************************************************
 	 * Method: CancelBooking
      *Description: To cancel booking  using bookingId

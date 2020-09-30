@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDMovieManagement" tests="6" started="6" failures="0" errors="2" ignored="1">
+  <testsuite name="com.cg.moviemanagement.runner.TestRunner" time="11.294">
+    <testsuite name="Feature: View Booking in movie management" time="11.294">
+      <testsuite name="Scenario: View booking using contact number" time="0.49">
+        <testcase name="Given User is on booking page" classname="Scenario: View booking using contact number" time="0.488"/>
+        <testcase name="When User enter valid contact number" classname="Scenario: View booking using contact number" time="0.002"/>
+        <testcase name="Then User get the booking details" classname="Scenario: View booking using contact number" time="0.0"/>
+      </testsuite>
+      <testsuite name="Scenario: View booking using invalid contact number" time="0.345" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_enter_invalid_contact_number(ViewBooking.java:41)&#13;
+	at ✽.When User enter invalid contact number(Features/viewBooking.feature:13)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on booking details page" classname="Scenario: View booking using invalid contact number" time="0.144"/>
+        <testcase name="When User enter invalid contact number" classname="Scenario: View booking using invalid contact number" time="0.201">
+          <error>java.lang.NullPointerException&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_enter_invalid_contact_number(ViewBooking.java:41)&#13;
+	at ✽.When User enter invalid contact number(Features/viewBooking.feature:13)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then User get the message Booking Not Available." classname="Scenario: View booking using invalid contact number" time="0.024" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

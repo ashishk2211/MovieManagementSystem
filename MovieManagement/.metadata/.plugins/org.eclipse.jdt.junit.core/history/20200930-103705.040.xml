@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDMovieManagement" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.moviemanagement.runner.TestRunner" time="0.652">
+    <testsuite name="Feature: View Booking in movie management" time="0.652">
+      <testsuite name="Scenario: View booking using contact number" time="0.652">
+        <testcase name="Given User is on booking page" classname="Scenario: View booking using contact number" time="0.452"/>
+        <testcase name="When User enter valid contact number" classname="Scenario: View booking using contact number" time="0.002"/>
+        <testcase name="Then User get the booking details" classname="Scenario: View booking using contact number" time="0.198"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

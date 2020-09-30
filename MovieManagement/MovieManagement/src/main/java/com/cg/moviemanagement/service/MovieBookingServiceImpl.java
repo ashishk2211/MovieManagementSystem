@@ -13,7 +13,12 @@ import com.cg.moviemanagement.entities.Booking;
 import com.cg.moviemanagement.entities.Show;
 import com.cg.moviemanagement.exceptions.BookingException;
 import com.cg.moviemanagement.util.MovieConstants;
-
+/************************************************************************
+ * @author Ashish kumar
+ * Description: This is the Service class to show Booking Details by 
+ * entering Contact Information.
+ * @Created Date 22-SEPT-2020
+ ************************************************************************/
 @Transactional
 @Service
 public class MovieBookingServiceImpl implements MovieBookingService{
@@ -44,20 +49,29 @@ public class MovieBookingServiceImpl implements MovieBookingService{
 		}
 		throw new BookingException(MovieConstants.TKT_NOT_AVAILABLE);
 	}
-	
+	/*********************************************************************************************************************************
+	 * Method: CancelBooking
+     *Description: To cancel booking  using bookingId
+	 * @param name               - input bookingId
+	 * @returns                  - Alert message
+	 * @throws Booking exception - if bookingId doesnt exist
+     *Created By                 - Ashish kumar
+     *Created Date               - 22-SEPT-2020                           	 
+	 **********************************************************************************************************************************/
 	@Override
 	public boolean cancelBooking(String bookingId) throws BookingException{
 		Booking booking = dao.getBookingDetails(bookingId);
 		if(booking!=null)
 		{
-		Show show = booking.getShow();
-		show.setSeats(show.getSeats() + booking.getNoOfTkts());
-		dao.editShow(show);
-		dao.removeBooking(booking);
-		return true;
+			Show show = booking.getShow();
+			show.setSeats(show.getSeats() + booking.getNoOfTkts());
+			dao.editShow(show);
+			dao.removeBooking(booking);
+			return true;
+			
 		}
-		
 		throw new BookingException(MovieConstants.BOOKING_NOT_AVAILABLE);
+		
 	}	
 	
 

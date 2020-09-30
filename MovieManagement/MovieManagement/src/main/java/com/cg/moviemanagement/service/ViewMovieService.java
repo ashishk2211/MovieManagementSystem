@@ -8,6 +8,7 @@ import com.cg.moviemanagement.exceptions.MovieNotFoundException;
 public interface ViewMovieService {
 
 	public List<Movie> viewMovies() throws MovieNotFoundException;
-	
 	public List<Movie> viewNewMovies() throws MovieNotFoundException;
+	
+	
 }

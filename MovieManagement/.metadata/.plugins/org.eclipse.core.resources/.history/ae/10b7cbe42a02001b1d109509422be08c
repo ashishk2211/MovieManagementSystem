@@ -1,0 +1,46 @@
+package com.cg.moviemanagement.stepdefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class CancelBooking {
+	
+	PageFactory cancelFactory;
+	WebDriver driver;
+	
+	public CancelBooking() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\CyberTroN\\Documents\\chromedriver\\chromedriver.exe");
+		driver=new ChromeDriver();
+	}
+
+	
+	@Given("^User is on booking details page$")
+	public void user_is_on_booking_details_page() throws Throwable {
+		
+		driver.get("http://localhost:4200/bookingDetails");
+		driver.manage().window().maximize();
+	    
+	}
+
+	@When("^click on cancel booking button$")
+	public void click_on_cancel_booking_button() throws Throwable {
+		driver.findElement(By.xpath("//input[@placeholder='Enter your reg. contact']")).sendKeys("8283037007");
+	   driver.findElement(By.xpath("//input[@class='btn btn-info']")).click();
+	   driver.findElement(By.xpath("//button[@class='btn-danger']")).click();
+	   
+	}
+
+	@Then("^User get message Booking Cancelled Successfully$")
+	public void user_get_message_Booking_Cancelled_Successfully() throws Throwable {
+	    System.out.println("Booking Cancelled Successfully");
+	    driver.close();
+	
+	}
+
+}

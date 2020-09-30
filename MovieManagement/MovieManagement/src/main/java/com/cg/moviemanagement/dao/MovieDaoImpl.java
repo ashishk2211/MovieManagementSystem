@@ -13,6 +13,13 @@ import com.cg.moviemanagement.entities.Booking;
 import com.cg.moviemanagement.entities.Movie;
 import com.cg.moviemanagement.entities.Show;
 
+
+/*************************************************************************************************************************
+ * @author Ashish kumar
+ * Description : It is a dao implementation class, which has functionality of all of movie management functions and does the
+ * 				transactions with entity classes. using entity manager.
+ *  Created Date 21-SEPT2020
+ *************************************************************************************************************************/
 @Repository
 public class MovieDaoImpl implements MovieDao{
 	
@@ -72,7 +79,6 @@ public class MovieDaoImpl implements MovieDao{
 	 * @param contact: contact used in the booking process
 	 * Created By - Ashish kumar
 	 * Created Date - 21-SEPT-2020
-	 * @throws ShowException - When a show is search for a screen which does not exist in database, exception is thrown.
 	 *********************************************************************************************************************/
 	@Override
 	public List<Booking> getBookingDetailsContact(String contact) {
@@ -85,7 +91,7 @@ public class MovieDaoImpl implements MovieDao{
 
 	@Override
 	public Booking getBookingDetails(String bookingId) {
-		String jpql = "from Booking b where b.bookingId=:bid";
+		String jpql = "from Booking b inner join fetch b.show s inner join fetch s.movie m where b.bookingId=:bid";
 		TypedQuery<Booking> query = em.createQuery(jpql, Booking.class);
 		query.setParameter("bid", bookingId);
 		return query.getSingleResult();

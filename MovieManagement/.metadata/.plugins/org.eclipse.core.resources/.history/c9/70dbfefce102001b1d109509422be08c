@@ -1,0 +1,54 @@
+package com.cg.moviemanagement.stepdefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class CancelBooking {
+	WebDriver driver;
+	
+	@Given("^User is on booking details page$")
+	public void user_is_on_booking_details_page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\CyberTroN\\Documents\\chromedriver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://localhost:4200/bookingDetails");
+		driver.manage().window().maximize();
+	}
+
+	@When("^User enter correct contact number$")
+	public void user_enter_correct_contact_number() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    driver.findElement(By.xpath("//input[@placeholder='Enter your reg. contact']")).sendKeys("8283037007");
+	    driver.findElement(By.xpath("//input[@class='btn btn-info']")).click();
+	    System.out.println("inside cancel booking");
+	    driver.findElement(By.className("btn-danger")).click();
+	}
+
+	@Then("^User get message Booking Cancelled Successfully$")
+	public void user_get_message_Booking_Cancelled_Successfully() throws Throwable {
+	   
+		String msg="Booking Cancelled Successfully";
+		
+		String  actualMsg=driver.findElement(By.xpath("//h2[contains(text(),'Booking Cancelled Successfully')]")).getText();
+		 Assert.assertEquals(actualMsg,msg);
+		System.out.println("Booking Cancelled Successfully");	
+	 
+	}
+
+	
+	@Then("^User get message Booking Not Available$")
+	public void user_get_message_Booking_Not_Available() throws Throwable {
+		String errorMsg="Booking Not Available";
+		 String actualMsg=driver.findElement(By.xpath("//p[contains(text(),'Booking Not Available')]")).getText();
+		 Assert.assertEquals(actualMsg,errorMsg);
+		   System.out.println("Booking Not Available");
+	}
+
+
+}

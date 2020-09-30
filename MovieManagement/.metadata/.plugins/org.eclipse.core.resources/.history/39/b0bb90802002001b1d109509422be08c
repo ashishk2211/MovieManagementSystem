@@ -1,0 +1,35 @@
+package com.cg.moviemanagement.stepdefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class ViewBooking {
+	WebDriver driver;
+	@Given("^User is on View booking page$")
+	public void user_is_on_View_booking_page() throws Throwable {
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://localhost:4200/moviemanagement/bookingDetails");
+		driver.manage().window().maximize();
+	    
+	}
+
+	@When("^User enter correct contact number$")
+	public void user_enter_correct_contact_number() throws Throwable {
+	   driver.findElement(By.name("contact")).sendKeys("8283037007");
+	   driver.findElement(By.className("btn btn-info")).click();
+	}
+
+	@Then("^User get booking details$")
+	public void user_get_booking_details() throws Throwable {
+		System.out.println("View sucessfully");
+	    driver.close();
+	}
+
+
+}

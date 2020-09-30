@@ -18,11 +18,13 @@ public class ViewMovieController {
 	@Autowired
 	private ViewMovieService service;
 	
+	
 	@CrossOrigin
 	@GetMapping("/viewmovies")
 	public List<Movie> viewMovies() throws MovieNotFoundException {		
 		return service.viewMovies();
 	}
+	
 	
 	@CrossOrigin
 	@GetMapping("/viewnewmovies")

@@ -1,0 +1,20 @@
+package com.cg.ocaprep;
+class Alpha{
+	static String s=" ";
+	protected Alpha() {
+		s+="alpha";
+	}
+}
+class subAlpha extends Alpha{
+	private SubAlpha() {
+		s+="sub";
+	}
+}
+public class SubSubAlpha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

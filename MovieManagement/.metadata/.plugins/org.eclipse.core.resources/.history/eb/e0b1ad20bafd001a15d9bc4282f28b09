@@ -1,0 +1,34 @@
+package com.cg.moviemanagement.service;
+import static org.junit.Assert.assertFalse;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.cg.moviemanagement.dao.MovieDao;
+import com.cg.moviemanagement.exceptions.BookingException;
+import com.cg.moviemanagement.entities.Booking;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class ViewBooking {
+	
+	@Mock
+	private MovieDao dao;
+	
+	@Autowired
+	private ViewBookingServiceImpl service;
+	
+	@Test
+	public void bookingNotExist() throws BookingException {
+		
+		List<Booking> booking=service.getBookingDetails("8283039009");
+		assertFalse(booking.isEmpty());
+	}
+
+}

@@ -1,0 +1,9 @@
+Feature: View Booking in movie management
+
+@ViewBooking
+Scenario: View booking by booking id
+Given User is on booking details page
+When User enter correct contact number
+Then User get the booking details
+
+

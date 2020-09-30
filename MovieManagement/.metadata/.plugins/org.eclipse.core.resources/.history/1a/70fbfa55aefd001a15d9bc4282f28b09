@@ -1,0 +1,20 @@
+
+server.port=8084
+
+#configure Context path
+server.servlet.context-path=/moviemanagement
+
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521/xe
+spring.datasource.username=ashish
+spring.datasource.password=4267261
+
+#Hibernate configuration
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+
+logging.level.root==debug
+logging.file=F:/Sprint 2 -MovieManagementAll/Project logs/moviemngmnt.log
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss}  %-5level %logger{36} - %msg%n
+logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n

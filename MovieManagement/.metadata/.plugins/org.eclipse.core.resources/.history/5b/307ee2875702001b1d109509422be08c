@@ -1,0 +1,21 @@
+import java.io.IOException;
+ public class Test {
+     public Test () {
+         try {
+           m1();
+           System.out.println("No error");
+         }
+         catch (IOException e) {
+            System.out.println("IOException caught");
+         }
+         catch (Exception e) {
+            System.out.println("Exception caught");
+         }
+     }
+     public void m1() {
+        throw new IOException();
+     }
+     public static void main (String [] args) {
+       Test t = new Test();
+     }
+}

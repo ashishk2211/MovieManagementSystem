@@ -31,7 +31,7 @@ public class ViewBookingServiceImpl implements ViewBookingService {
 	 * @returns bookingList		 - true if Details found, otherwise throws NotFoundException.
 	 * @throws NotFoundException - It is raised due to wrong contact number given by the user.
 	 * Created By				 - Ashish kumar
-	 * Created Date				 - 18-APR-2020 	
+	 * Created Date				 - 21-SEPT-2020 	
 	 ********************************************************************************************/
 	@Override
 	public List<Booking> getBookingDetails(String Contact) throws BookingException {

@@ -1,0 +1,19 @@
+
+ public class Test {
+    
+     
+   
+     public static void main (String [] args) {
+    	 
+    	 boolean b = false;
+    	 int i = 7;
+    	 double d = 1.23;
+    	 float f = 4.56f;
+    	 	System.out.format(" %d", i);
+
+    	 }
+
+
+
+      
+     }

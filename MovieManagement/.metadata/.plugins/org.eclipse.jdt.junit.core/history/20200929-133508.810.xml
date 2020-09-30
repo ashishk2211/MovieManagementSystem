@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDMovieManagement" tests="4" started="4" failures="0" errors="2" ignored="2">
+  <testsuite name="com.cg.moviemanagement.runner.TestRunner" time="0.128">
+    <testsuite name="Feature: Cancel Booking in movie management" time="0.128">
+      <testsuite name="Scenario: Cancel booking by booking id" time="0.086" incomplete="true">
+        <error>java.lang.NullPointerException&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_enter_correct_contact_number(ViewBooking.java:24)&#13;
+	at ✽.When User enter correct contact number(Features/cancelBooking.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on booking details page" classname="Scenario: Cancel booking by booking id" time="0.003"/>
+        <testcase name="When User enter correct contact number" classname="Scenario: Cancel booking by booking id" time="0.083">
+          <error>java.lang.NullPointerException&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_enter_correct_contact_number(ViewBooking.java:24)&#13;
+	at ✽.When User enter correct contact number(Features/cancelBooking.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And click on cancel booking button" classname="Scenario: Cancel booking by booking id" time="0.003" ignored="true"/>
+        <testcase name="Then User get message Booking Cancelled Successfully" classname="Scenario: Cancel booking by booking id" time="0.029" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

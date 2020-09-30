@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDMovieManagement" tests="4" started="4" failures="0" errors="0" ignored="4">
+  <testsuite name="com.cg.moviemanagement.runner.TestRunner" time="0.0">
+    <testsuite name="Feature: Cancel Booking in movie management" time="0.0">
+      <testsuite name="Scenario: Cancel booking by booking id" time="0.0" incomplete="true">
+        <skipped/>
+        <testcase name="Given User is on booking details page" classname="Scenario: Cancel booking by booking id" time="0.0" ignored="true"/>
+        <testcase name="When User enter correct contact number" classname="Scenario: Cancel booking by booking id" time="0.0" ignored="true"/>
+        <testcase name="And click on cancel booking button" classname="Scenario: Cancel booking by booking id" time="0.0" ignored="true"/>
+        <testcase name="Then User get message Booking Cancelled Successfully" classname="Scenario: Cancel booking by booking id" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

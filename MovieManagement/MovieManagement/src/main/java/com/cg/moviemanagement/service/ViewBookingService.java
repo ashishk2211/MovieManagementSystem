@@ -6,7 +6,7 @@ import com.cg.moviemanagement.exceptions.BookingException;
 
 
 /************************************************************************
- * @author Anand Raj
+ * @author Ashish kumar
  * Description: This is the Service interface to show Booking Details functionality.
  * @version 1.0
  * @Created Date 17-APR-2020

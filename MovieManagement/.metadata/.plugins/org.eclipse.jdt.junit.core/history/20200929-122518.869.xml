@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDMovieManagement" tests="3" started="3" failures="0" errors="2" ignored="2">
+  <testsuite name="com.cg.moviemanagement.runner.TestRunner" time="0.049">
+    <testsuite name="Feature: Cancel Booking in movie management" time="0.049">
+      <testsuite name="Scenario: View booking by contact number" time="0.014" incomplete="true">
+        <error>org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (Session info: chrome=85.0.4183.121)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.54 seconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'DESKTOP-9864DOG', ip: '169.254.71.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\CYBERT~1\AppData\Local\Temp\scoped_dir13304_18066}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.121, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7aca369b8c66057c8713db1aaf8a06ce&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:907)&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_is_on_View_booking_page(ViewBooking.java:18)&#13;
+	at ✽.Given User is on View booking page(Features/cancelBooking.feature:5)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on View booking page" classname="Scenario: View booking by contact number" time="0.011">
+          <error>org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer
+  (Session info: chrome=85.0.4183.121)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.54 seconds
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'DESKTOP-9864DOG', ip: '169.254.71.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\CYBERT~1\AppData\Local\Temp\scoped_dir13304_18066}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=85.0.4183.121, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 7aca369b8c66057c8713db1aaf8a06ce&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#13;
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:907)&#13;
+	at com.cg.moviemanagement.stepdefinition.ViewBooking.user_is_on_View_booking_page(ViewBooking.java:18)&#13;
+	at ✽.Given User is on View booking page(Features/cancelBooking.feature:5)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User enter correct contact number" classname="Scenario: View booking by contact number" time="0.005" ignored="true"/>
+        <testcase name="Then User get booking details" classname="Scenario: View booking by contact number" time="0.023" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

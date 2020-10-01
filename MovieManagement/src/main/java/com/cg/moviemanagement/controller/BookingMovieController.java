@@ -1,6 +1,7 @@
 package com.cg.moviemanagement.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,7 +20,7 @@ public class BookingMovieController {
 	@Autowired
 	private MovieBookingService service;
 	
-
+    @CrossOrigin
 	@PostMapping("/booking")
 	public MovieMessage doBooking(@RequestBody BookingForm form) throws BookingException {
 		String bookingId = service.addBooking(form);
@@ -28,6 +29,7 @@ public class BookingMovieController {
 		return msg;
 	}
 	
+    @CrossOrigin
 	@GetMapping("/cancelbooking/{bookingid}")
 	public MovieMessage cancelBooking(@PathVariable(name="bookingid") String bookingId) throws BookingException {
 		service.cancelBooking(bookingId);

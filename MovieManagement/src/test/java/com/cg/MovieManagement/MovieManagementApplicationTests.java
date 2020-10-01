@@ -1,4 +1,4 @@
-package com.cg.MovieManagement;
+package com.cg.moviemanagement;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
